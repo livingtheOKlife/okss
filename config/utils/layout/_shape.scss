@@ -1,0 +1,15 @@
+.circle {
+
+  border-radius: 50%;
+
+}
+
+@each $i in $bits {
+
+  .br-#{$i} {
+
+    border-radius: #{$i}px;
+
+  }
+
+}

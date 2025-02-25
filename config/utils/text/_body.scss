@@ -1,0 +1,12 @@
+span:not(.logo),
+p {
+
+  @include setBodyFont(14px);
+
+}
+
+p:not(:last-of-type) {
+
+  @extend .mb-8;
+
+}

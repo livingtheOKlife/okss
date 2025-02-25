@@ -1,0 +1,9 @@
+@each $i in $bits {
+
+  .gap-#{$i} {
+
+    gap: #{$i}px;
+
+  }
+
+}

@@ -1,0 +1,33 @@
+$primary: hsl(210, 96%, 40%);
+$secondary: hsl(32, 96%, 48%);
+
+$dark: hsl(210, 100%, 4%);
+$light: hsl(210, 0%, 98%);
+
+$gold: hsl(43, 68%, 56%);
+$silver: hsl(0, 0%, 75%);
+$bronze: hsl(32, 45%, 42%);
+
+$red: hsl(0, 64%, 55%);
+$red-light: lighten($red, 20%);
+$red-dark: darken($red, 20%);
+
+$orange: hsl(29, 98%, 48%);
+$orange-light: lighten($orange, 20%);
+$orange-dark: darken($orange, 20%);
+
+$yellow: hsl(56, 64%, 49%);
+$yellow-light: lighten($yellow, 20%);
+$yellow-dark: darken($yellow, 20%);
+
+$green: hsl(92, 55%, 43%);
+$green-light: lighten($green, 20%);
+$green-dark: darken($green, 20%);
+
+$blue: hsl(211, 45%, 48%);
+$blue-light: lighten($blue, 20%);
+$blue-dark: darken($blue, 20%);
+
+$purple: hsl(285, 42%, 53%);
+$purple-light: lighten($purple, 20%);
+$purple-dark: darken($purple, 20%);

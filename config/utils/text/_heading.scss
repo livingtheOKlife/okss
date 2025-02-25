@@ -1,0 +1,11 @@
+h2 {
+
+  @include setHeadingFont(24px);
+
+  .logo {
+
+    font-size: 24px;
+
+  }
+
+}

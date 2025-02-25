@@ -1,0 +1,39 @@
+@mixin setBackgroundColor ($color) {
+
+  @if (lightness($color) > 70) {
+
+    background-color: $color;
+    color: $dark;
+
+    h2, h3, h4, h5, h6 {
+
+      color: $dark;
+
+    }
+
+    p, span, svg {
+
+      color: lighten($dark, 4%);
+      
+    }
+
+  } @else {
+
+    background-color: $color;
+    color: $light;
+
+    h2, h3, h4, h5, h6 {
+
+      color: $light;
+
+    }
+
+    p, span, svg {
+
+      color: darken($light, 4%);
+
+    }
+
+  }
+
+}
