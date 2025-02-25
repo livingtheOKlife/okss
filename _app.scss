@@ -1,0 +1,10 @@
+.App {
+
+  @extend .relative, .flex, .flex-col, .justify-between;
+  @include setBackgroundColor($dark);
+  height: 100dvh;
+  max-width: 100dvh;
+  width: 100dvw;
+  max-width: 100dvw;
+
+}

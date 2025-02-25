@@ -1,0 +1,51 @@
+.btn {
+
+  @extend .clickable;
+  @include setBackgroundColor($primary);
+  @include setMenuFont(12px);
+  font-weight: 600;
+
+  &.sm {
+
+    @extend .px-16, .py-12, .br-4;
+    font-size: 12px;
+
+  }
+
+  &.md {
+
+    @extend .px-20, .py-12, .br-6;
+    font-size: 14px;
+
+    @media screen and (max-width: 379px) {
+
+      padding: 12px 16px;
+      border-radius: 4px;
+      font-size: 12px;
+
+    }
+
+  }
+
+  &.lg {
+
+    @extend .px-24, .py-16, .br-8;
+    font-size: 16px;
+
+    @media screen and (max-width: 379px) {
+
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-size: 14px;
+
+    }
+
+  }
+
+  @media (prefers-color-scheme: dark) {
+
+    @include setBackgroundColor($secondary);
+
+  }
+
+}

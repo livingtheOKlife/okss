@@ -10,14 +10,32 @@
 
 }
 
+.justify-evenly {
+
+  justify-content: space-evenly;
+
+}
+
+.justify-end {
+
+  justify-content: end;
+
+}
+
 .align-center {
 
   align-items: center;
 
 }
 
+.align-end {
+
+  align-items: flex-end;
+
+}
+
 .self-center {
 
   align-self: center;
-
+  
 }

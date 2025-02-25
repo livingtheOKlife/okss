@@ -1,13 +1,13 @@
 a {
 
-  @include setMenuFont(12px);
+  @include setLinkFont(12px);
   color: $primary;
   transition: all 0.08s ease-in-out;
 
   &.nav-link {
 
     @extend .p-8;
-    font-size: 14px;
+    @include setLinkFont(14px);
 
   }
 

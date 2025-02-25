@@ -1,12 +1,39 @@
-span:not(.logo),
 p {
 
-  @include setBodyFont(14px);
+  @include setBodyFont(12px);
+  
+  a {
+    
+    @include setBodyFont(12px);
+    text-transform: none;
+    
+    * {
+      
+      @include setBodyFont(8px);
+      font-weight: 100;
+      color: $primary;
 
-}
+    }
 
-p:not(:last-of-type) {
+    &:hover {
 
-  @extend .mb-8;
+      font-weight: 300;
+      color: darken($primary, 16%);
+      
+      * {
+        
+        color: darken($primary, 16%);
+
+      }
+
+    }
+
+  }
+  
+  @media screen and (max-width: 379px) {
+
+    font-size: 10px;
+    
+  }
 
 }

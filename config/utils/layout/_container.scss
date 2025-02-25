@@ -15,15 +15,26 @@
 .widget {
 
   width: 100%;
-  max-width: 480px;
   margin: 0 auto;
+
+  &.single {
+
+    max-width: 259px;
+
+  }
+
+  &.double {
+
+    max-width: 518px;
+
+  }
 
 }
 
 .packet {
 
   width: 100%;
-  max-width: 320px;
+  max-width: 400px;
   margin: 0 auto;
 
 }
@@ -31,13 +42,7 @@
 .piece {
 
   width: 100%;
-  max-width: 240px;
+  max-width: 320px;
   margin: 0 auto;
-
-}
-
-.zeta {
-
-  z-index: 1000000;
 
 }

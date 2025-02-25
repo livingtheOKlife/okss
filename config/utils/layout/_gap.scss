@@ -7,3 +7,23 @@
   }
 
 }
+
+@each $i in $bits {
+
+  .row-gap-#{$i} {
+
+    row-gap: #{$i}px;
+
+  }
+
+}
+
+@each $i in $bits {
+
+  .col-gap-#{$i} {
+
+    column-gap: #{$i}px;
+
+  }
+
+}
