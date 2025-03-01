@@ -11,10 +11,16 @@
 
     }
 
-    p, span, svg {
+    p, span, label, input, svg {
 
       color: lighten($dark, 4%);
       
+    }
+
+    input::placeholder {
+
+      color: rgb(0, 0, 0, 0.48);
+
     }
 
   } @else {
@@ -28,9 +34,15 @@
 
     }
 
-    p, span, svg {
+    p, span, label, input, svg {
 
       color: darken($light, 4%);
+
+    }
+
+    input::placeholder {
+
+      color: rgb(255, 255, 255, 0.24);
 
     }
 
