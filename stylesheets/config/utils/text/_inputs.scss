@@ -1,0 +1,23 @@
+input {
+
+  @include setBodyFont(14px);
+  
+  &::placeholder {
+    
+    @include setBodyFont(14px);
+
+    @media screen and (max-width: 379px) {
+  
+      font-size: 12px;
+      
+    }
+
+  }
+
+  @media screen and (max-width: 379px) {
+
+    font-size: 12px;
+    
+  }
+
+}
