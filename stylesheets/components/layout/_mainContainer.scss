@@ -10,4 +10,10 @@
     
   }
 
+  .main-wrapper {
+
+    @extend .wrapper;
+
+  }
+
 }
