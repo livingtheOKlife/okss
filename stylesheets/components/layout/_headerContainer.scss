@@ -1,7 +1,7 @@
 #header-container {
 
   @extend .container;
-  @include setBackgroundColor($dark);
+  @include setBackgroundColor($light);
 
   #main-nav {
 
@@ -52,6 +52,12 @@
       }
       
     }
+
+  }
+
+  @media (prefers-color-scheme: dark) {
+
+    @include setBackgroundColor($dark);
 
   }
 

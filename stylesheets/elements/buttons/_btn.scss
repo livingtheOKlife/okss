@@ -1,11 +1,17 @@
 .btn {
 
-  @extend .flex, .align-center, .clickable;
+  @extend .flex, .align-center;
   @include setBackgroundColor($primary);
   @include setMenuFont(12px);
   font-weight: 400;
   text-transform: none;
   line-height: normal;
+
+  &:not(:disabled) {
+
+    @extend .clickable;
+
+  }
 
   * {
 
@@ -88,6 +94,12 @@
   @media (prefers-color-scheme: dark) {
 
     @include setBackgroundColor($secondary);
+
+  }
+
+  &:disabled {
+
+    background-color: rgb(0, 0, 0, 0.32);
 
   }
 

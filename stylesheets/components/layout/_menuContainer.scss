@@ -42,25 +42,6 @@
     }
     
   }
-
-  #links-nav {
-
-    @extend .flex, .justify-center, .align-center, .gap-4;
-
-    .links-nav-link {
-
-      @extend .flex, .p-8;
-      cursor: pointer;
-
-      svg {
-
-        font-size: 16px;
-
-      }
-
-    }
-
-  }
   
   @media (prefers-color-scheme: dark) {
 
