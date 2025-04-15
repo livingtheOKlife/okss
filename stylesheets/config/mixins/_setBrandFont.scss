@@ -3,12 +3,11 @@
   font-family: $brand;
   font-size: $size;
   font-weight: 300;
-  letter-spacing: 0;
+  letter-spacing: 1;
   line-height: 1;
   
   em {
     
-    letter-spacing: -1px;
     text-transform: uppercase;
     color: $primary;
 

@@ -1,7 +1,6 @@
 #main-container {
 
-  @extend .container, .h-100, .p-24, .y-scroll;
-  z-index: 1;
+  @extend .container, .h-100, .y-scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
 
@@ -14,17 +13,6 @@
   .main-wrapper {
 
     @extend .wrapper;
-    opacity: 0;
-    animation: fade-in 0.32s forwards ease-in-out;
-    animation-delay: 0.16s;
-
-    *:not(.spinner, .spinner *) {
-
-      opacity: 0;
-      animation: fade-in 0.64s forwards ease-in-out;
-      animation-delay: 0.64s;
-
-    }
 
   }
 
