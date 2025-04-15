@@ -16,5 +16,20 @@
     }
 
   }
+
+  .input-text {
+
+    @extend .ml-16;
+    @include setBodyFont(9px);
+    margin-top: -2px;
+    color: $red;
+    
+    @media (prefers-color-scheme: dark) {
+      
+      color: $red;
+      
+    }
+  
+  }
   
 }
