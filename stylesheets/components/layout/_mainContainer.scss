@@ -14,16 +14,17 @@
   .main-wrapper {
 
     @extend .wrapper;
-    opacity: 0;
-    animation: fade-in 0.32s forwards ease-in-out;
-    animation-delay: 0.16s;
 
-    *:not(.spinner, .spinner *) {
-
-      opacity: 0;
-      animation: fade-in 0.64s forwards ease-in-out;
-      animation-delay: 0.64s;
-
+    @for $i from 1 through 1000 {
+    
+      & > *:nth-child(#{$i}) {
+    
+        opacity: 0;
+        animation: fade-in 0.64s forwards ease-in-out;
+        animation-delay: calc(#{$i} * 0.02s + 0.32s);
+    
+      }
+    
     }
 
   }
